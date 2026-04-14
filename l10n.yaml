@@ -1,0 +1,5 @@
+arb-dir: lib/src/l10n
+template-arb-file: heypster_en.arb
+output-localization-file: heypster_localizations.dart
+output-class: HeypsterLocalizations
+output-dir: lib/src/l10n/generated

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__dart__analyze_files",
+      "mcp__dart__list_devices",
+      "Bash(flutter pub:*)",
+      "Bash(flutter run:*)"
+    ]
+  }
+}

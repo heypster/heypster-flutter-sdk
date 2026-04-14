@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+linter:
+  rules:
+    # Dart 3.11 suggests ?-elements in map literals but the syntax
+    # is new and less readable for team familiarity. Revisit later.
+    use_null_aware_elements: false
