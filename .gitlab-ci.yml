@@ -1,0 +1,21 @@
+stages:
+  - release
+
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+  script:
+    - VERSION="${CI_COMMIT_TAG#v}"
+    - PUBSPEC_VERSION=$(grep '^version:' pubspec.yaml | awk '{print $2}')
+    - |
+      if [ "$VERSION" != "$PUBSPEC_VERSION" ]; then
+        echo "Tag ($VERSION) does not match pubspec ($PUBSPEC_VERSION)" >&2
+        exit 1
+      fi
+    - awk "/^## ${VERSION}( |\$)/{flag=1;next}/^## /{flag=0}flag" CHANGELOG.md > release_notes.md
+  release:
+    tag_name: $CI_COMMIT_TAG
+    name: $CI_COMMIT_TAG
+    description: ./release_notes.md

@@ -1,4 +1,4 @@
-# heypster_flutter_sdk
+# heypster Flutter SDK
 
 The official Flutter SDK for [heypster](https://heypster.com), a privacy-first,
 GDPR-compliant GIF platform for businesses.
@@ -15,7 +15,8 @@ Works on **all Flutter platforms**: iOS, Android, Web, macOS, Windows, Linux.
 dependencies:
   heypster_flutter_sdk:
     git:
-      url: https://gitlab.com/heypster/heypster-flutter-sdk.git
+      url: https://github.com/heypster/heypster-flutter-sdk.git
+      ref: v1.0.0
 ```
 
 ### 2. Configure

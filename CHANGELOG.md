@@ -1,4 +1,4 @@
-## 0.0.1
+## 1.0.0 - 2026-04-14
 
 * Initial release of the heypster Flutter SDK.
 * `HeypsterFlutterSDK.configure()` — SDK initialization with API key.

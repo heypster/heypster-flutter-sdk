@@ -1,7 +1,9 @@
 name: heypster_flutter_sdk
 description: "heypster's Flutter SDK"
-version: 0.0.1
-homepage:
+version: 1.0.0
+homepage: https://github.com/heypster/heypster-flutter-sdk
+repository: https://github.com/heypster/heypster-flutter-sdk
+issue_tracker: https://github.com/heypster/heypster-flutter-sdk/issues
 
 environment:
   sdk: ^3.11.4
