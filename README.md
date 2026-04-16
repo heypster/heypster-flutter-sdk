@@ -51,8 +51,7 @@ MaterialApp(
 )
 ```
 
-Supported languages: English, French, German, Spanish, Italian,
-Portuguese, Dutch, Danish, Swedish, Norwegian, Finnish.
+Supported languages: English, French, German, Danish, Dutch, Swedish, Italian, Spanish, Portuguese, Norwegian, Finnish, Korean, Arabic, Catalan, Croatian, Czech, Greek, Hebrew, Hindi, Hungarian, Indonesian, Japanese, Malay, Polish, Romanian, Russian, Simplified Chinese, Traditional Chinese, Turkish, Ukrainian, Slovak, Thai, Vietnamese, Estonian, Breton, Irish, Latvian, Lithuanian, Maltese, Slovenian, Bulgarian, Serbian.
 
 ### 4. Show the GIF Picker
 
@@ -105,7 +104,7 @@ HeypsterGridView(
 - **Trending GIFs** (GIFs of the day)
 - **Multiple renditions** (original, fixed width/height, downsized, preview)
 - **Content rating filter** (G, PG, PG-13, R)
-- **11 languages** supported for search
+- **42 languages** supported for search
 - **Familiar API** mirroring Giphy's Flutter SDK for easy migration
 
 ## Migrating from Giphy
