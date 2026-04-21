@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:heypster_flutter_sdk/heypster_flutter_sdk.dart';
 
-void main() {
-  HeypsterFlutterSDK.configure(apiKey: '98PO-SD58-B984-X451-TR87');
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load();
+
+  final apiKey = dotenv.env['HEYPSTER_API_KEY'];
+  if (apiKey == null || apiKey.isEmpty) {
+    throw StateError('HEYPSTER_API_KEY missing from example/.env');
+  }
+
+  HeypsterFlutterSDK.configure(apiKey: apiKey);
   runApp(const ExampleApp());
 }
 

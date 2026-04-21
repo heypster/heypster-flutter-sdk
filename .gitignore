@@ -30,7 +30,6 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 /build/
 /coverage/
-../../.env
 
 # Local test fixtures (real API responses, not committed)
 test/fixtures/
