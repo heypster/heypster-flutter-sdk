@@ -35,3 +35,6 @@ migrate_working_dir/
 # Local test fixtures (real API responses, not committed)
 test/fixtures/
 test/dto/fixture_parsing_test.dart
+
+# Claude
+.claude/
